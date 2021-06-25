@@ -25,6 +25,7 @@
 		6F4F7D3B2685A5D3002CC2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F4F7D3E2685A5D3002CC2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4F7D402685A5D3002CC2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA036622685AD5800160ED8 /* GhostStartTester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GhostStartTester.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		6F4F7D262685A5D0002CC2E3 = {
 			isa = PBXGroup;
 			children = (
+				6FA036622685AD5800160ED8 /* GhostStartTester.entitlements */,
 				6F4F7D402685A5D3002CC2E3 /* Info.plist */,
 				6F4F7D312685A5D0002CC2E3 /* Sources */,
 				6F4F7D302685A5D0002CC2E3 /* Products */,
@@ -294,8 +296,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GhostStartTester.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VMGRRW6SG7;
+				DEVELOPMENT_TEAM = 8779C367VK;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,8 +316,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GhostStartTester.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VMGRRW6SG7;
+				DEVELOPMENT_TEAM = 8779C367VK;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

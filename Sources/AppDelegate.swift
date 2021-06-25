@@ -1,5 +1,6 @@
 import ComScore
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,6 +12,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         SCORAnalytics.configuration().addClient(with: configuration)
         SCORAnalytics.start()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+            guard granted else { return }
+            DispatchQueue.main.async {
+                application.registerForRemoteNotifications()
+            }
+        }
         return true
     }
 
