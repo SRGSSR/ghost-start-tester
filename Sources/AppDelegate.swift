@@ -10,7 +10,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             builder.publisherId = "1234567"
             builder.secureTransmissionEnabled = true
         }
-        SCORAnalytics.configuration().addClient(with: configuration)
+        
+        if let analyticsConfiguration = SCORAnalytics.configuration() {
+            analyticsConfiguration.addClient(with: configuration)
+            analyticsConfiguration.usagePropertiesAutoUpdateMode = .foregroundAndBackground
+        }
         SCORAnalytics.start()
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
