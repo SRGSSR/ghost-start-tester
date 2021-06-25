@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		6F4F7D3A2685A5D0002CC2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F7D382685A5D0002CC2E3 /* Main.storyboard */; };
 		6F4F7D3C2685A5D3002CC2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F7D3B2685A5D3002CC2E3 /* Assets.xcassets */; };
 		6F4F7D3F2685A5D3002CC2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F7D3D2685A5D3002CC2E3 /* LaunchScreen.storyboard */; };
+		6FA036612685A78800160ED8 /* ComScore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FA036602685A78800160ED8 /* ComScore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA036612685A78800160ED8 /* ComScore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = GhostStartTester;
+			packageProductDependencies = (
+				6FA036602685A78800160ED8 /* ComScore */,
+			);
 			productName = GhostStartTester;
 			productReference = 6F4F7D2F2685A5D0002CC2E3 /* GhostStartTester.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 6F4F7D262685A5D0002CC2E3;
+			packageReferences = (
+				6FA0365F2685A78800160ED8 /* XCRemoteSwiftPackageReference "Comscore-Swift-Package-Manager" */,
+			);
 			productRefGroup = 6F4F7D302685A5D0002CC2E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6FA0365F2685A78800160ED8 /* XCRemoteSwiftPackageReference "Comscore-Swift-Package-Manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/comScore/Comscore-Swift-Package-Manager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6FA036602685A78800160ED8 /* ComScore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FA0365F2685A78800160ED8 /* XCRemoteSwiftPackageReference "Comscore-Swift-Package-Manager" */;
+			productName = ComScore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F4F7D272685A5D0002CC2E3 /* Project object */;
 }

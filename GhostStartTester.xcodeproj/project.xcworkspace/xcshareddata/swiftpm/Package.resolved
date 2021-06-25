@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ComScore",
+        "repositoryURL": "https://github.com/comScore/Comscore-Swift-Package-Manager.git",
+        "state": {
+          "branch": null,
+          "revision": "1bdfebcc54cef4ae96e3627f9014446218e806ca",
+          "version": "6.8.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
