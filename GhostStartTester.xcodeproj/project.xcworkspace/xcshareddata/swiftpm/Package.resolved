@@ -9,6 +9,15 @@
           "revision": "1bdfebcc54cef4ae96e3627f9014446218e806ca",
           "version": "6.8.1"
         }
+      },
+      {
+        "package": "Airship",
+        "repositoryURL": "https://github.com/urbanairship/ios-library.git",
+        "state": {
+          "branch": null,
+          "revision": "bd0e009c54be941d85d52d8cd7b49b745a37dc78",
+          "version": "14.2.3"
+        }
       }
     ]
   },

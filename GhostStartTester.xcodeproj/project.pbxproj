@@ -14,6 +14,8 @@
 		6F4F7D3C2685A5D3002CC2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F7D3B2685A5D3002CC2E3 /* Assets.xcassets */; };
 		6F4F7D3F2685A5D3002CC2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F7D3D2685A5D3002CC2E3 /* LaunchScreen.storyboard */; };
 		6FA036612685A78800160ED8 /* ComScore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FA036602685A78800160ED8 /* ComScore */; };
+		6FB8D4302686457700B891D9 /* AirshipCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FB8D42F2686457700B891D9 /* AirshipCore */; };
+		6FB8D432268645E500B891D9 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8D431268645E500B891D9 /* AirshipConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		6F4F7D3E2685A5D3002CC2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4F7D402685A5D3002CC2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FA036622685AD5800160ED8 /* GhostStartTester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GhostStartTester.entitlements; sourceTree = "<group>"; };
+		6FB8D431268645E500B891D9 /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB8D4302686457700B891D9 /* AirshipCore in Frameworks */,
 				6FA036612685A78800160ED8 /* ComScore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +47,7 @@
 		6F4F7D262685A5D0002CC2E3 = {
 			isa = PBXGroup;
 			children = (
+				6FB8D431268645E500B891D9 /* AirshipConfig.plist */,
 				6FA036622685AD5800160ED8 /* GhostStartTester.entitlements */,
 				6F4F7D402685A5D3002CC2E3 /* Info.plist */,
 				6F4F7D312685A5D0002CC2E3 /* Sources */,
@@ -89,6 +94,7 @@
 			name = GhostStartTester;
 			packageProductDependencies = (
 				6FA036602685A78800160ED8 /* ComScore */,
+				6FB8D42F2686457700B891D9 /* AirshipCore */,
 			);
 			productName = GhostStartTester;
 			productReference = 6F4F7D2F2685A5D0002CC2E3 /* GhostStartTester.app */;
@@ -119,6 +125,7 @@
 			mainGroup = 6F4F7D262685A5D0002CC2E3;
 			packageReferences = (
 				6FA0365F2685A78800160ED8 /* XCRemoteSwiftPackageReference "Comscore-Swift-Package-Manager" */,
+				6FB8D42E2686457700B891D9 /* XCRemoteSwiftPackageReference "ios-library" */,
 			);
 			productRefGroup = 6F4F7D302685A5D0002CC2E3 /* Products */;
 			projectDirPath = "";
@@ -137,6 +144,7 @@
 				6F4F7D3F2685A5D3002CC2E3 /* LaunchScreen.storyboard in Resources */,
 				6F4F7D3C2685A5D3002CC2E3 /* Assets.xcassets in Resources */,
 				6F4F7D3A2685A5D0002CC2E3 /* Main.storyboard in Resources */,
+				6FB8D432268645E500B891D9 /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +371,14 @@
 				minimumVersion = 6.8.1;
 			};
 		};
+		6FB8D42E2686457700B891D9 /* XCRemoteSwiftPackageReference "ios-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/urbanairship/ios-library.git";
+			requirement = {
+				kind = exactVersion;
+				version = 14.2.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -370,6 +386,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6FA0365F2685A78800160ED8 /* XCRemoteSwiftPackageReference "Comscore-Swift-Package-Manager" */;
 			productName = ComScore;
+		};
+		6FB8D42F2686457700B891D9 /* AirshipCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FB8D42E2686457700B891D9 /* XCRemoteSwiftPackageReference "ios-library" */;
+			productName = AirshipCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

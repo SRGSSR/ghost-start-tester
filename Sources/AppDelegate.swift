@@ -1,3 +1,4 @@
+import AirshipCore
 import ComScore
 import UIKit
 import UserNotifications
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SCORAnalytics.configuration().addClient(with: configuration)
         SCORAnalytics.start()
+        
+        UAirship.takeOff()
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
             guard granted else { return }
