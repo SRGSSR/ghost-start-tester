@@ -7,6 +7,8 @@ In this article **we prove that ghost starts are not an SRG SSR applications iss
 
 During our investigations we also discovered behavioral conflicts between the comScore SDK and the [Airship](https://www.airship.com) SDK. These conflicts might potentially affect measurements not only for apps involved in the Mediapulse initiative, but for any app implementing comScore and Airship at the same time. This problem is not theoretical, as comScore and Airship are two industry standards widely used.
 
+To know more about which decisions have been taken based on these investigations, please refer to the [dedicated thread](https://github.com/SRGSSR/srganalytics-apple/issues/54).
+
 ## Unavoidability of Ghost Starts
 
 According to the official comScore implementation guide, section 2.2:
